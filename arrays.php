@@ -39,7 +39,7 @@
 
     $people = array('Brad' => 35, 'Jose' => 32, 'William' => 37);
 
-    $ids =[22 => 'Brad', 44 => 'Jose', 63 => 'William'];
+    $ids = [22 => 'Brad', 44 => 'Jose', 63 => 'William'];
 
     // Adding to an array
 
