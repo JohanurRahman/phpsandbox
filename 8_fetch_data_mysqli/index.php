@@ -4,7 +4,7 @@
     require('config/db.php');
 
     // Create Query
-    $query = "SELECT * FROM posts";
+    $query = 'SELECT * FROM posts ORDER BY created_at DESC';
 
     // Get Result
     $result = mysqli_query($conn, $query);
@@ -41,6 +41,7 @@
 
                 <p><?php echo $post['body'] ?></p> 
                 <a class="btn btn-default" href="<?php echo ROOT_URL; ?>post.php?id=<?php echo $post['id'];?>">Read More</a>
+                
             </div>
 
         <?php endforeach; ?>
