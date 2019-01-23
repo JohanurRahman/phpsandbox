@@ -34,15 +34,19 @@
 
         <?php foreach($posts as $post): ?>
 
-            <div class="well">
+            <div class="jumbotron" style="padding: 2em">
                 <h3><?php echo $post['title']; ?></h3>
 
                 <small>Created on <?php echo $post['created_at']; ?> by <?php echo $post['author']; ?></small>
+                <br>
+                <br>
 
                 <p><?php echo $post['body'] ?></p> 
-                <a class="btn btn-default" href="<?php echo ROOT_URL; ?>post.php?id=<?php echo $post['id'];?>">Read More</a>
+                <!-- <button type="button" class="btn btn-link">Link</button> -->
+                <a type="button" class="btn btn-primary" href="<?php echo ROOT_URL; ?>post.php?id=<?php echo $post['id'];?>">Read More</a>
                 
             </div>
+            <br>
 
         <?php endforeach; ?>
 

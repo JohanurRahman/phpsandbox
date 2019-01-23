@@ -77,7 +77,8 @@
             </div>
             <br>
             <input type="hidden" name="update_id" value="<?php echo $post['id']; ?>">
-            <input type="submit" name="submit" value="Submtit" class="btn btn-primary">
+
+            <input type="submit" name="submit" value="Submit" class="btn btn-primary">
 
         </form>
 
